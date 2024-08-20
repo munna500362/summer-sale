@@ -177,8 +177,8 @@
                 <div class="bg-white p-5 rounded-md mt-14">
                     <h2>Have coupon?</h2> 
                     <div class="bg-white border rounded-tl-xl rounded-bl-xl rounded-tr-xl rounded-br-xl ">
-                        <input class=" pl-4 outline-none " type="text" placeholder="coupon code ">
-                        <button class="bg-fuchsia-400 px-5 py-3 rounded-tr-xl rounded-br-xl">Apply</button>
+                        <input class=" pl-4 outline-none " type="text" placeholder="coupon code"  onchange="upperCase()">
+                        <button id="basic-btn" onclick="myButton()" class="bg-fuchsia-400 px-5 py-3 rounded-tr-xl rounded-br-xl "  disabled>Apply</button>
                     </div>
                 </div>
                 <div class="bg-white mt-2 px-5 pb-5 space-y-3">
@@ -187,7 +187,9 @@
                     </div>
                     <hr>
                     <div id="div2">
-
+                        <h3 >Total price : <span id="totalvalue">00</span>tk</h3>
+                        <p>Discount: 00 tk</p>
+                        <p>Total: <span id="Final-Total">00 tk</span></p>
                     </div>
                    
                     <hr>
